@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal page of Szilard Csanad Szecsenyi: hobbies, interests and weekly routine.">
+  <title>Szilard Csanad Szecsenyi | Personal Page</title>
+  <!-- Favicon: an emoji drawn with an inline SVG, so no extra file is needed -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥊</text></svg>">
+  <!-- To switch theme, change css/style1.css to css/style2.css -->
+  <link rel="stylesheet" href="css/style1.css" id="theme-link">
+</head>
+<body id="top">
+
+  <header>
+    <h1>Szilard Csanad Szecsenyi</h1>
+    <p class="tagline">Gym, boxing, football, coding, music and travel</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#coding">Coding</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button type="button" id="theme-toggle" class="theme-btn">Switch theme</button>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <figure>
+        <img src="images/me.jpg" alt="Portrait of Szilard Csanad Szecsenyi" width="220">
+        <figcaption>That's me!</figcaption>
+      </figure>
+      <p>Hi, I'm <strong>Szilard</strong>. I'm a student who loves staying active and exploring new places.</p>
+      <p>My free time is split between the <em>gym</em>, the <em>boxing ring</em>, the <em>football pitch</em> and my <em>keyboard</em>, with a trip whenever I can fit one in.</p>
+      <blockquote>
+        Consistency beats motivation.
+        <footer>My training motto</footer>
+      </blockquote>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+      <h2>Interests and Hobbies</h2>
+
+      <h3>What I enjoy</h3>
+      <ul>
+        <li>Going to the gym</li>
+        <li>Coding</li>
+        <li>Listening to music</li>
+        <li>Travelling</li>
+      </ul>
+
+      <h3>Sports I play</h3>
+      <ol>
+        <li>Boxing</li>
+        <li>Football</li>
+      </ol>
+
+      <h3>In a nutshell</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Training</h4>
+          <p>Gym <mark>6 times a week</mark>, boxing twice and football once.</p>
+        </article>
+        <article class="card">
+          <h4>Coding</h4>
+          <p>Building things with HTML, CSS and more.</p>
+        </article>
+        <article class="card">
+          <h4>Music</h4>
+          <p>Something playing <mark>every day</mark>.</p>
+        </article>
+        <article class="card">
+          <h4>Travel</h4>
+          <p>New places, as often as I can.</p>
+        </article>
+      </div>
+
+      <details>
+        <summary>Fun fact (click to open)</summary>
+        <p>Adding it up, that's <strong>9 training sessions</strong> every week.</p>
+      </details>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule">
+      <h2>My Weekly Routine</h2>
+      <table>
+        <caption>How often I do each activity</caption>
+        <thead>
+          <tr><th>Hobby</th><th>How often</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gym</td><td>6 times a week</td><td>Fitness</td></tr>
+          <tr><td>Boxing</td><td>2 times a week</td><td>Sport</td></tr>
+          <tr><td>Football</td><td>Once a week</td><td>Sport</td></tr>
+          <tr><td>Coding</td><td>In my free time</td><td>Creative / Technical</td></tr>
+          <tr><td>Music</td><td>Every day</td><td>Relaxation</td></tr>
+          <tr><td>Travelling</td><td>Whenever I can</td><td>Adventure</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Total training sessions: 9 per week</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- CODING -->
+    <section id="coding">
+      <h2>Coding</h2>
+      <p>This page is built with the following:</p>
+      <dl>
+        <dt><abbr title="HyperText Markup Language">HTML</abbr></dt>
+        <dd>Gives the page its structure: headings, lists, tables and images.</dd>
+        <dt><abbr title="Cascading Style Sheets">CSS</abbr></dt>
+        <dd>Controls the colours, fonts and layout. This page has two themes.</dd>
+        <dt>Developer tools</dt>
+        <dd>Built into the browser, used to inspect and test the code live.</dd>
+      </dl>
+      <p>Here is how a theme is switched:</p>
+      <pre><code>&lt;link rel="stylesheet" href="css/style2.css"&gt;</code></pre>
+      <aside>
+        <strong>Tip:</strong> press <kbd>F12</kbd> in your browser to open the developer tools.
+      </aside>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>Planning a trip? I like looking at destinations on
+        <a href="https://www.wikivoyage.org" target="_blank" rel="noopener">Wikivoyage</a>.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Say hello</legend>
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Alex" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+          <label for="genre">Favourite music genre</label>
+          <select id="genre" name="genre">
+            <option>Hip-hop</option>
+            <option>Pop</option>
+            <option>Rock</option>
+            <option>Electronic</option>
+            <option>Other</option>
+          </select>
+
+          <p>Favourite sport to watch:</p>
+          <label class="inline"><input type="radio" name="sport" value="football" checked> Football</label>
+          <label class="inline"><input type="radio" name="sport" value="boxing"> Boxing</label>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <time datetime="2026">2026</time> Szilard Csanad Szecsenyi</p>
+    <p><a href="#top">Back to top &uarr;</a></p>
+  </footer>
+
+
+  <!-- Theme switcher: swaps the stylesheet and remembers the choice -->
+  <script>
+    const link = document.getElementById("theme-link");
+    const btn = document.getElementById("theme-toggle");
+
+    // Restore the saved theme (if any)
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved) link.setAttribute("href", saved);
+    } catch (e) { /* storage not available, ignore */ }
+
+    btn.addEventListener("click", function () {
+      const next = link.getAttribute("href") === "css/style1.css" ? "css/style2.css" : "css/style1.css";
+      link.setAttribute("href", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* Theme 1: clean light theme */
+:root {
+  --primary: #2c5282;
+  --accent: #2b6cb0;
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --line: #cbd5e0;
+  --stripe: #edf2f7;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Georgia, serif; background: var(--bg); color: var(--text); margin: 0; line-height: 1.6; }
+
+/* Header and navigation */
+header { background: var(--primary); color: #fff; text-align: center; padding: 2rem 1rem 1rem; }
+header h1 { margin: 0; font-size: 2.2rem; }
+.tagline { font-style: italic; margin: .3rem 0 1rem; }
+nav a { color: #fff; margin: 0 .8rem; text-decoration: none; font-weight: bold; padding-bottom: 2px; border-bottom: 2px solid transparent; transition: border-color .2s; }
+nav a:hover { border-bottom-color: #fff; }
+
+/* Theme switch button */
+.theme-btn { margin-top: .8rem; background: transparent; color: #fff; border: 2px solid #fff; padding: .3rem 1rem; border-radius: 20px; font: inherit; cursor: pointer; transition: background .2s, color .2s; }
+.theme-btn:hover { background: #fff; color: var(--primary); }
+
+/* Layout */
+main { max-width: 800px; margin: 1.5rem auto; padding: 0 1rem; }
+section { display: flow-root; background: var(--card); padding: 1rem 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: .3rem; }
+h3 { color: #4a5568; }
+h4 { margin: 0 0 .3rem; color: var(--primary); }
+a { color: var(--accent); }
+
+/* Image */
+figure { float: right; margin: 0 0 1rem 1rem; text-align: center; }
+img { max-width: 100%; height: auto; border-radius: 50%; border: 4px solid var(--primary); }
+figcaption { font-size: .85rem; color: var(--muted); }
+
+/* Quote, text extras */
+blockquote { margin: 1rem 0; padding: .5rem 1rem; border-left: 4px solid var(--primary); background: var(--stripe); font-style: italic; clear: both; }
+blockquote footer { font-size: .85rem; color: var(--muted); }
+mark { background: #fefcbf; padding: 0 .2rem; }
+
+/* Cards (flexbox) */
+.cards { display: flex; flex-wrap: wrap; gap: 1rem; }
+.card { flex: 1 1 160px; background: var(--stripe); border-radius: 8px; padding: .8rem 1rem; border-top: 4px solid var(--primary); transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 4px 10px rgba(0,0,0,.15); }
+.card p { margin: 0; font-size: .95rem; }
+
+/* Details */
+details { margin-top: 1rem; background: var(--stripe); padding: .6rem 1rem; border-radius: 6px; }
+summary { cursor: pointer; font-weight: bold; color: var(--primary); }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; }
+caption { font-weight: bold; padding: .5rem; }
+th, td { border: 1px solid var(--line); padding: .5rem; text-align: left; }
+th { background: var(--primary); color: #fff; }
+tbody tr:nth-child(even) { background: var(--stripe); }
+tbody tr:hover { background: #bee3f8; }
+tfoot td { font-weight: bold; text-align: center; background: var(--stripe); }
+
+/* Coding section */
+dt { font-weight: bold; color: var(--primary); margin-top: .6rem; }
+dd { margin-left: 1.5rem; }
+pre { background: #1a202c; color: #9ae6b4; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+kbd { background: #e2e8f0; border: 1px solid #a0aec0; border-radius: 4px; padding: 0 .4rem; font-family: monospace; }
+aside { background: var(--stripe); border-left: 4px solid var(--accent); padding: .6rem 1rem; margin-top: 1rem; }
+
+/* Form */
+fieldset { border: 1px solid var(--line); border-radius: 8px; padding: 1rem; }
+legend { color: var(--primary); font-weight: bold; padding: 0 .5rem; }
+label { display: block; margin-top: .8rem; font-weight: bold; }
+label.inline { display: inline-block; margin-right: 1rem; font-weight: normal; }
+input[type="text"], input[type="email"], select, textarea { width: 100%; padding: .5rem; border: 1px solid var(--line); border-radius: 4px; font: inherit; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+button { margin-top: 1rem; background: var(--primary); color: #fff; border: none; padding: .6rem 1.5rem; border-radius: 4px; font: inherit; cursor: pointer; transition: background .2s; }
+button:hover { background: var(--accent); }
+
+/* Footer */
+.site-footer { text-align: center; padding: 1rem; color: var(--muted); font-size: .9rem; }
+.site-footer p { margin: .2rem 0; }
+
+/* Small screens */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.6rem; }
+  nav a { display: inline-block; margin: .2rem .5rem; }
+  figure { float: none; margin: 0 auto 1rem; }
+  section { padding: 1rem; }
+}
